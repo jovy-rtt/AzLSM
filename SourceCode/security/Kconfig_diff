@@ -1,0 +1,8 @@
+source security/azlsm/Kconfig
+
+default DEFAULT_SECURITY_AZLSM if SECURITY_AZLSM
+
+	config DEFAULT_SECURITY_AZLSM
+		bool "azlsm" if SECURITY_AZLSM=y
+
+default "azlsm" if DEFAULT_SECURITY_AZLSM

@@ -1,0 +1,6 @@
+config     SECURITY_AZLSM
+   bool     "azlsm support"
+   depends on SECURITY
+   default     n
+   help
+        introduction of azlsm
